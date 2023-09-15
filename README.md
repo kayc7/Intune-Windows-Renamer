@@ -8,7 +8,7 @@
 * The install commmand requires 64-bit Powershell. It is best practice to use this anyways, as it has many newer cmdlets available compared to the 32 bit host. The command is as follows: <br>
 ```%WINDIR%\sysnative\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy bypass -windowstyle hidden -file .\FILENAME.ps1```<br>
 Remember to rename FILENAME in the command above to the name you assign to the script.
-* The uninstall command should always be the file you generated from a PS script to detect via Intune. In the case of Part 1's script, it would be <br>
+* The uninstall command should always be based on the file you generated from a PS script to detect via Intune. In the case of Part 1's script, it would be <br>
 ```cmd.exe /c del C:\scripts\hostname.txt```
 * For Part 1, detect via 'Manually configure detection rules' and set it to C:\scripts with the file 'hostname.txt'
 * For Part 2, detect in the same way as Part 1 but with the file 'rnc'
